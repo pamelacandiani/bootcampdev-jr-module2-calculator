@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <input />
-    <input />
-    <button>Somar</button>
-    <input readonly/>
+    <div class="container">
 
+        <div class="calc">
+            <h1>Calculadora</h1>
+            <input id="num1" type="number"/>
+            <input id="num2" type="number"/>
+            <button onclick="calc()">Somar</button>
+            <input id="output" type="text" readonly/>
+        </div>
+
+        <div class="historic">
+
+        </div>
+
+    </div>
+   
+    <script src="javascript.js"></script>
 </body>
 </html>
