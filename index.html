@@ -12,9 +12,11 @@
 
         <div class="calc">
             <object data="calculate_black_48.svg" type="image/svg+xml"></object>
-            <h1>Calculadora</h1>
-            <input id="num1" type="number"/>
-            <input id="num2" type="number"/>
+            <div class="calc-title">
+                Calculadora
+            </div>
+            <input placeholder="Digite um número" id="num1" type="number"/>
+            <input placeholder="Digite um número"id="num2" type="number"/>
 
             <div>
                 <button onclick="calc('+')">+</button>
@@ -26,8 +28,16 @@
             <input id="output" type="text" readonly/>
         </div>
 
-        <div id="historic" class="historic">
+        <div class="historic">
+            <div class="historic-title  ">
+                <h1>Histórico</h1>
+            </div>
+            <div class="last-operations">
+                10 últimas operações:
+                <div id="historic">
 
+                </div>
+            </div>
         </div>
 
     </div>
