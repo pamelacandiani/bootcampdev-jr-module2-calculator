@@ -12,4 +12,10 @@ function calc(op){
     }
 
     document.getElementById("output").value = output;
+
+    var newHistoric = "<div>" + num1 + " " + op + " " + num2 + " = " + output + "</div>";
+
+    document.getElementById("historic").innerHTML = newHistoric + document.getElementById("historic").innerHTML;
 }
+
+    
